@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <title>Cyra De LaRiviere</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
     <nav role="navigation">Nav</nav>
@@ -47,7 +49,7 @@
          <section class="about" id="about">
              <div class="container">
                  <div class="profile.img">
-                     <img src="images.profile.jpg" alt="image">
+                     <img src="images/profile.jpg" alt="image">
                  </div>
                  <div class="about-details">
                      <div class="about-heading">
@@ -72,31 +74,27 @@
                         programming language I encounter. I'm also working on writing and illustrating my first sci-fi 
                         graphic novel.
                      </p>
+                     <div class="social-media">
+                        <ul class="nav-list">
+                            <li>
+                              <a href="#" class="icon-link">
+                                <i class="fab fa-facebook-square"></i>            
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="icon-link">
+                                <i class="fab fa-twitter-square"></i>            
+                              </a>
+                           </li>                           
+                           <li>
+                               <a href="#" class="icon-link">
+                                   <i class="fab fa-github-square"></i>            
+                               </a>
+                           </li>           
+                        </ul>
+                    </div>
                  </div>
-                 <div class="social-media">
-                     <ul class="nav-list">
-                         <li>
-                           <a href="#" class="icon-link">
-                             <i class="fab fa-facebook-square"></i>            
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" class="icon-link">
-                             <i class="fab fa-twitter-square"></i>            
-                           </a>
-                        </li>
-                        <li>
-                            <a href="#" class="icon-link">
-                                <i class="fab fa-linkedin-square"></i>            
-                            </a>
-                        </li>   
-                        <li>
-                            <a href="#" class="icon-link">
-                                <i class="fab fa-github-square"></i>            
-                            </a>
-                        </li>           
-                     </ul>
-                 </div>
+                 
 
              </div>
          </section>
@@ -108,7 +106,7 @@
                      <h3>What I can do for you</h3>
 
                  </div>
-                 <div class="skills">
+                 <div class="my-skills">
                      <div class="skill">
                          <div class="icon-container">
                              <i class="fas fa-layer-group"></i>
@@ -215,9 +213,43 @@
                 </div>
             </div>
         </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Contact</h2>
+                    <h3>Let's work together</h3>
+                </div>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                    <label for="service">Services</label>
+                    <select name="service" id="service">
+                        <option value="">Web Design</option>
+                        <option value="">Web Development</option>
+                        <option value="">Graphic Design</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <footer class="copyright">
+            <div class="up" id="up">
+                <i class="fas fa-chevron-up"></i>
+                <p>Copyright: 2019 Cyra DeLa Riviviere</p>
+            </div>
+        </footer>
+
 
     
     </main>
-    <script src="bower_components/aos/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
